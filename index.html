@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu sistema</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
 </head>
+
 <body>
     <main>
-        <h1>Bem-vindo a meu sistema 👋</h1>
+        <div>
+            <h1>Bem-vindo ao GymCana</h1>
+            <p>Faça login para entrar no sistema.</p>
+        </div>
+        <form>
+            <label for="email-input">Email</label>
+            <input type="text" name="email-input" id="email-input" placeholder="exemplo@gmail.com" required>
+
+            <label for="password-input">Senha</label>
+            <input type="text" name="password-input" id="password-input" placeholder="@Minhasenha123" required>
+
+            <button>Entrar</button>
+        </form>
     </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

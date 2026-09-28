@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+}
+
+main{
+    background-color: #525252;
+    min-width: 30%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    padding: 24px;
+}
+div{
+    text-align: center;
+    font-family: 'Inter';
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+div h1{
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+}
+div p{
+    color: #b6b6b6;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    gap: 8px;
+}
+
+input{
+    min-width: 95%;
+    min-height: 42px;
+    outline: none;
+    border: solid transparent 2px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Inter";
+    color: #585858;
+    transition: 0.25s ease-in-out;
+}
+input::placeholder{    color: #b1b1b1;}
+
+
+input:hover{ 
+    border-color: #5daf5d;
+}
+input:focus{ 
+    border-color: #5daf5d;
+}
+
+
+
+label{
+    color: #b6b6b6;
+    font-size: 16px;
+    font-family: "Inter";
+}
+
+button{
+    margin-top: 10px;
+    min-width: 60%;
+    min-height: 48px;
+    text-align: center;
+    background-color: #7cd67c;
+    font-size: 24px;
+    font-weight: bolder;
+    outline: none;
+    border: solid transparent 1px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+button:hover{ 
+    background-color: #5daf5d;
+    scale: 1.025;
+}
+
+.card-home{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    text-align: center;
+}
