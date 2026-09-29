@@ -106,3 +106,12 @@ button:hover{
     width: 250px;
     text-align: center;
 }
+
+#msg{
+    color:#585858;
+}
+
+#exitButton {
+    margin-top: 40px;
+    font-weight: normal;
+}

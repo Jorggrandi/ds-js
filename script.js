@@ -19,7 +19,7 @@ if(!localStorage.getItem("users")){
     localStorage.setItem("users", formatedData)
 }
 // Ao enviar o form
-form.addEventListener(("submit"), (e) => {
+form.addEventListener("submit", (e) => {
     // Previne o padrão (enviar)
     e.preventDefault()
     
@@ -48,7 +48,13 @@ form.addEventListener(("submit"), (e) => {
     // Se achar valide como sucesso
     else{
         alert(`Seja bem vindo ${userFinded.login}`)
-        localStorage.setItem("userAuthed", email)
-        window.location.href = "https://github.com"
+        localStorage.setItem("userAuthed", userCredentials.login)
+        window.location.href = "home.html"
     }
 })
+
+const workoutA = document.querySelector("#button-workout1")
+if(workoutA){
+    console.log(    navigator.geolocation.getCurrentPosition()
+)
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-home">
+        <h2>Treinos</h2>
+        <button id="button-workout1">Treino A</button>
+        <button id="button-workout2">Treino B</button>
+        <button id="button-workout3">Treino C</button>
+        <button onclick="exit()" id="exitButton">Voltar ao Início</button>
+
+    </div>
+
+    <div>
+        <p id="title-workout"></p>
+        <ul id="workout-exercices"></ul>
+
+    </div>
+
+    <script>
+        function exit(){
+            window.location.href = "home.html"
+        }
+    </script>
+</body>
+</html>

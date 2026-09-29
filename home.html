@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="card-home">
-        <h1>GymCana do senai</h1>
+        <h1 id="msg">GymCana do senai</h1>
         <p>Bem vindo </p>
 
         <p id="welcome-msg">Treino Liberado</p>
-        <button id="exitButton">Sair</button>
+        <button id="seeWorkouts" onclick="window.location.href = 'workout.html'">Ver treinos</button>
+        <button id="backButton" onclick="byeBye()">Sair</button>
     </div>
+    <script src="script.js"></script>
+        <script>
+        const authUser = localStorage.getItem("userAuthed")
 
-    <script src="script.js">
 
-        const authUser = sessionStorage.getItem("userAuthed")
-        if(!authUser){
-            window.location.href = `index.html`
-        }else{
-            document.querySelector("#welcome-msg").textContent = `Bem vindo ${localStorage.getItem("userAuthed")}!`
+        function byeBye(){
+            window.location.href = "index.html"
+            localStorage.removeItem("userAuthed")
+            console.log("FUNCIONA AI DESGRAçA")
         }
 
-        document.querySelector("#exitButton").addEventListener("click", (e) => {
-            localStorage.removeItem("logged")
+        if (!authUser) {
             window.location.href = "index.html"
-        })
+            alert("Faça login para acessar.")
+        } else {
+            document.querySelector("#welcome-msg").textContent = `Bem vindo ${localStorage.getItem("userAuthed")}!`
+        }
     </script>
+
 </body>
+
 </html>
